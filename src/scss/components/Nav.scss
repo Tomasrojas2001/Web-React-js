@@ -1,0 +1,88 @@
+.header{
+    position: fixed;
+    top: 0;
+    height: 100px;
+    width: 100vw;
+    padding: 0 12rem;
+    z-index: 5;
+    background-image: linear-gradient( 180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100% );
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo-container{
+
+        .pulsar{
+            display: block;
+            width: max-content;
+            height: 100px;
+            img{
+                height: 100px;
+                width: 100px;
+            }
+        }
+        
+    }
+    .menu{
+        width: 85%;
+        .menu-items{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            align-items: center;
+            .menu-item a{
+                text-decoration: none;
+                color: inherit;
+                padding-left: 6px;
+                padding-right: 6px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                font-family: var(--font-family);
+                font-size: 0.93em;
+                letter-spacing: 0.4px;
+                margin-left: 3.31em;
+                color: #fff;
+                font-weight: 500;
+                text-decoration: none;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: 0.2s ease-in-out;
+                &:hover{
+                    color: var(--gold);
+                }
+            }
+            
+        }
+        
+
+    }
+    .social-medias{
+        
+        & .social-medias-container{          
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            & > li{
+                display: flex;
+                align-items: center;
+            }
+            & li:first-child{
+                padding: 0px 15px 0 0;
+            }
+            & > li > svg{
+                fill: var(--gold);
+                width: 1.6rem;
+                height: 1.6rem;
+                &:hover{
+                    cursor: pointer;
+                }
+            };
+            
+        }
+    }
+    
+    
+}
+
+

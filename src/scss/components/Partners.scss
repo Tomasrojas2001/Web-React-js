@@ -1,0 +1,32 @@
+.parters-section {
+    padding: 100px 12rem 0 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .container {
+      .partners-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
+      }
+    }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      padding: 1rem 2rem;
+      .container {
+        .partners-container {
+          grid-template-columns: repeat(2, 1fr);
+          text-align: left;
+          gap: 1rem;
+  
+          .partner {
+            &:nth-of-type(5) { 
+              display: none;
+            }
+            img {
+              height: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }

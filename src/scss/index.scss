@@ -1,0 +1,21 @@
+@import "base/base.scss";
+
+@import "components/Faqs.scss";
+@import "components/Footer.scss";
+@import "components/Home.scss";
+@import "components/LiveAuction.scss";
+@import "components/Lore.scss";
+@import "components/Nav.scss";
+@import "components/Partners.scss";
+@import "components/ScrollToTop.scss";
+@import "components/SpiciesRare.scss";
+@import "components/Roadmap.scss";
+@import "components/Team.scss";
+@import "components/RoadmapItem.scss";
+@import "../components/LiveAuctionCard/LiveAuctionCard.scss";
+@import "../components/TeamCard/TeamCard.scss";
+
+section{
+    width: 100%;
+    color: white;
+}

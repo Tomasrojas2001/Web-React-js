@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Saira+Condensed:wght@100;200;300;400&display=swap');
+@import url(//db.onlinewebfonts.com/c/67137b5f6928edc941186baaab5a664b?family=Lemon/Milk);
+
+:root {
+    --orange: #ff8139;
+    --pink: #fd0085;
+    --purple:#8b1b54;
+    --green: #39ffa0;
+    --red: #ff3939;
+    --gold:#7c6836b8;
+    --gold2:#7c6836b8;
+    --light-green: #edfff6;
+    --light-orange: #fff0e8;
+    --accent-color1: #ffffff;
+    --accent-color2: #777777;
+    --accent-color3: #cccccc;
+    --accent-color4:#F5F8FFC9;
+    --accent-color5: #0B0C0C;
+    --card-color: #000000;
+    --font-family:"Lemon/Milk";
+    --font-size-section:60px;
+    
+  }
+
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+.app-container {
+    background-color: #000;
+    font-family: var(--font-family);
+    height: 100%;
+    width: 100%;
+    
+    transition: 0.5s ease-in-out;
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+      padding: 0;
+      &::-webkit-scrollbar{
+          display: none;
+      }
+    }
+  }
+
+  
+::-webkit-scrollbar {
+  background-color: #111111;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold);
+}
+body{
+  overflow-x: hidden;
+}
+
+.lore-section, .roadmap-section, .LiveAuction-section, .parters-section, .faqs-section, .team-section, .footer{
+  margin-top: 250px;
+  padding-top: 100px;
+}
+
+.roadmap-title, .partners-title, .faqs-title, .team-title, .spicies-rare-title, .Live-auction-title{
+  font-weight: 800;
+  text-shadow: 0 0 1px #fff;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: 0.51134px;
+  text-transform: uppercase;
+  z-index: 2;
+  color: var(--gold);
+
+
+}
+
+.roadmap-title, .partners-title, .faqs-title, .team-title{
+  margin: 0 0 9rem 0;
+  font-size: var(--font-size-section);
+}

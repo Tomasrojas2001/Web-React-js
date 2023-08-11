@@ -1,0 +1,80 @@
+.team-card{
+    border-image: url(../../assets/Card_border.png) 44 44 stretch;
+    border-color: #888;
+    border-style: inset;
+    border-width: 18px;
+    position: relative;
+    background-image: url(../../assets/Card_bg.jpg);
+    background-size: 120% 120%;
+    background-position: center;
+    width: 18%;
+    height: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    animation: float 6s linear infinite;
+    .team-img{
+        width: 72%;
+        height: 40%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .team-desc{
+        text-align: center;
+        margin-top: 1vw;
+        .member{
+            line-height: 1.3;
+            
+        }
+        .member-role{
+            color: rgba(255, 255, 255, 0.22);
+            margin-top: 0.4vw;
+            font-weight: 300;
+            font-size: 0.7vw;
+        }
+        .member-name{
+            color: rgba(255, 255, 255, 0.22);
+            font-size: 0.9vw;
+            margin-top: 0.4vw;
+            text-align: center;
+            position: relative;
+            font-weight: 300;
+            z-index: 2;
+            text-transform: uppercase;
+        }
+        .member-nickname{
+            font-weight: 300;
+            font-size: 0.8;
+            text-transform: uppercase;
+        }
+    }
+    .twitter-card svg{
+        fill: #fff;
+    }
+}
+.team-card:nth-child(1) {
+    animation-delay: 1s;
+}
+  .team-card:nth-child(2) {
+    animation-delay: 3s;
+}
+  .team-card:nth-child(3) {
+    animation-delay: 5s;
+}
+  .team-card:nth-child(4) {
+    animation-delay: 7s;
+}
+.team-card:nth-child(5) {
+    animation-delay: 9s;
+}
+
+@keyframes float {
+    from {
+      transform: rotate(0deg) translate3d(5px, 0, 0) rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) translate3d(5px, 0, 0) rotate(-360deg);
+    }
+  }

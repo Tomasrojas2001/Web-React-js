@@ -1,0 +1,103 @@
+
+    .home-container{
+    #tsparticles{
+      canvas{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 999;
+        pointer-events: none;
+        user-select: none;
+      }
+
+    }
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 20%;
+      pointer-events: none;
+      background-image: linear-gradient(to bottom, transparent 0%,rgb(0, 0, 0) 80%, #000 100%);
+  }
+    .box{
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        -webkit-transform-style: preserve-3d!important;
+        transform-style: preserve-3d!important;
+        transition: transform 100ms linear;
+        box-sizing: border-box;
+    
+      .imgBox{
+            display: block;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            background-size: 100%;
+            top: -100px;
+            left: -100px;
+            bottom: -100%;
+            right: -100px;
+          }
+          .BackgroundBigStones{
+            background-position: center 0%;
+            background-size: 70%;
+            transform: translateZ(100px);
+            background-image: url(../../assets/BigStonesParallax.png);
+             
+          }
+          .BackgroundSmallStones{
+            background-image: url(../../assets/LitlteStonesParallax.png);
+            background-position: center 0%;
+            background-size: 80%;
+            transform: translateZ(180px);
+          }
+          .BackgroundLavaEstatica{
+            background-image: url(../../assets/LavaEstaticaParallaxParticulas.png);
+            background-position: 50% 3%;
+            background-size: 100%;
+            transform: translateZ(120px);
+          }
+          .BackgroundThunderbirds{
+            background-image: url(../../assets/Elite-infinity-group.png);
+            background-position: 50% 33vh;
+            background-size: 125vh;
+            transform: translateZ(30px);
+          }
+          .BackgroundFloor{
+            background-image: url(../../assets/FloorParallaxSuelo.png);
+            background-position: 50% 50%;
+            background-size: 100%;
+            z-index: 5;
+            transform: rotateX(-1deg);
+          }
+          .BackgroundLava{
+            background-image: url(../../assets/LavaParallaxBackground.jpg);
+            width: 120vw;
+            height: 100vh;
+            left: -10vw;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-position: 50% 0%;
+            transform: rotateX(-1deg);
+            background-size: 100% 100%;
+          }
+    
+      }
+      
+    
+    }

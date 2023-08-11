@@ -1,0 +1,168 @@
+.lore-section{
+    height: 100%;
+    
+    .lore-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .txt-dynamic-container{
+            display: inline-flex;
+            justify-content: center;
+            margin: 0 0 8rem 0;
+            .static-txt{
+                color: var(--accent-color4);
+                font-size: var(--font-size-section);
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+            }
+            .dynamic-txts{
+                margin-left: 15px;    
+                line-height: 90px;
+                height: 90px;
+                overflow: hidden;
+                li{
+                    color:var(--gold);
+                    text-shadow: 0 0 1px #fff;
+                    list-style: none;
+                    font-size: var(--font-size-section);
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    position: relative;
+                    top: 0;
+                    animation: slide 5s steps(2) infinite;
+                    span{
+                    position: relative;
+                    &::after{
+                            content: "";
+                            position: absolute;
+                            background:#000;
+                            height: 90px;
+                            left: 0;
+                            width: 100%;
+                            border-left: 2px solid var(--gold);
+                            animation: typing 2.5s steps(10) infinite;
+                    }
+                    }
+                    
+                }
+            }
+        }
+        .slider{
+            position: relative;
+            width: 100vw;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .slides{
+                display: flex;
+                width: 400vw;
+                height: max-content;
+                position: relative;
+                top: 0;
+                left: -100vw;
+                
+                      
+                .slide{
+                    width: 100vw;
+                    height: max-content;
+                    .columns{
+                        display: flex;
+                        justify-content: space-evenly;
+                        align-items:center;
+                        height: max-content;
+                        width: 100vw;
+                        .column{
+                            display: flex;
+                            flex-direction: column;
+                            max-width: 400px;
+                            height: max-content;
+                            line-height: 25px;
+                            text-align: start;
+                            letter-spacing: 0.5px;
+                            font-size: 18px;
+                            font-weight: 400;
+                            font-family: var(--font-family);
+                            .left-title{
+                                
+                            }
+                            .left-paragraph{
+                                padding: 15px 0;
+                                
+                            }
+                            .right-title{
+                               
+                            }
+                            .right-paragraph{
+                                padding: 15px 0;
+                                
+                            }
+                        }
+                        .right{
+                            align-self: flex-start;
+                        }
+                    }
+                }
+                
+            }
+            .prev, .next{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);     
+                width: 30px;
+                height: 30px;
+                background: transparent;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                svg{
+                    color: white;
+                    width:  10px;
+                    height: 30px;
+                }
+            }
+            .next{
+                right: 4rem;
+                &:active{
+                    color: #888;
+                }
+                
+            }
+            .prev{
+                left: 4rem;
+                &:active{
+                    color: #888;
+                }
+               
+            }
+            
+        }
+        
+    }
+}
+.transition{
+    transition: all 0.4s ease-in-out;
+}  
+
+.grab{
+    cursor: grab;
+}
+.grabbing{
+    cursor: grabbing;
+}
+
+@keyframes slide {
+    100%{
+       top: -180px;
+    }
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 95px;
+    }
+}

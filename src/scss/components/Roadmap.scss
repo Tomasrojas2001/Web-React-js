@@ -1,0 +1,21 @@
+.roadmap-section{
+    color: var(--accent-color1);
+    position: relative;
+    .roadmap{
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        max-width: 1100px;
+        margin: auto;
+        
+        .roadmap-container{
+            width: 100%;
+            max-width: 677px;
+            margin: auto;
+            z-index: 2;
+            
+        }     
+    }
+    
+}
